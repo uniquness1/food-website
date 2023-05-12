@@ -1,0 +1,80 @@
+
+@media(max-width: 920px) {
+    .hero,
+    .about,
+    .menu-section,
+    .services,
+    .newsletter,
+    footer {
+        padding: 3rem 5rem;
+    }
+    .hid{
+        display: none;
+    }
+}
+
+@media(max-width: 815px) {
+    .hero,
+    .about,
+    .menu-section,
+    .services,
+    .newsletter,
+    footer {
+        padding: 3rem 2rem;
+    }
+}
+
+@media(max-width: 767px) {
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #1e1c2a;
+        gap: 5rem;
+        height: 100%;
+        width: 80%;
+        position: fixed;
+        top: 0;
+        left: -100%;
+    }
+    .nav-menu.open {
+        left: 0;
+    }
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu a {
+        color: #ff7028;
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    .reverse-grid {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hero,
+    .about,
+    .food-menu {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+    .hero-content-description,
+    .about-content-description {
+        text-align: center;
+    }
+
+    .hero-content-image {
+        margin-top: 5rem;
+    } 
+    .footer{
+        flex-direction: column;
+    }
+    .footer-con-items{
+        margin-bottom: 2rem;
+    }
+    .footer .footer-con-items h3::before {
+        width: 20%;
+    }
+}
